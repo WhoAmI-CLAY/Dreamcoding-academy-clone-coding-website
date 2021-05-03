@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+body {font-family: 'Noto Sans KR', sans-serif;  margin : 0px} h1,h2,h3,h4,h5,h6,p,ul { padding : 0px; margin : 0px}
+li { list-style : none; } a {color : black; text-decoration: none;}
+button { outline : none; cursor : pointer; padding : 0px} 
+img { display: block;}  
+
+header { border-bottom-style : solid; border-width: 1px; border-color : rgb(246, 246,246)}
+header article{ display: flex; align-items: center; width : 120px; height: 79px;   margin : 0px auto; }
+header .table_or_mobile { display: none;}
+
+.content1 { padding : 50px 0px; }
+.content1 article { width: 1200px; height : auto; margin : 0px auto;}
+.content1 article .title {color :#202020; font-size : 20px; padding-bottom : 20px; text-align: center;}
+.content1 article .sub_title { color : #4d4d4d; font-size : 18px; padding-bottom : 40px; text-align: center;}
+.content1 article .container { display: flex; justify-content: space-evenly; width: 1200px; height: auto; padding : 20px 0px}
+.content1 article .container .box_model { padding: 40px; width : 250px; background-color: #f6f6f6;  transition: all 0.4s; }
+.content1 article .container .box_model:hover { -mozs-box-shadow: -1px 1px 20px #ccc; -webkit-box-shadow: -1px 1px 20px #ccc; box-shadow: -1px 1px 20px #ccc; transform: scale(1.1,1.1);  background-color : white; transition: all 0.4s; }
+.content1 article .container .img_box { overflow : hidden; margin-bottom : 20px; width : 95px; height: 95px;  border: 1px solid #d4d4d4; border-radius : 20px;}
+.content1 article .container .box_model img {  width : 95px; height: 95px; transition: all 0.3s;}
+.content1 article .container .box_model img:hover{ transform: scale(1.05); transition: all 0.3s;}
+.content1 article .container .box_model h3 { margin-bottom : 20px; color : #202020; font-size : 24px; font-weight : 700;}
+.content1 article .container .box_model p { font-size : 16px; color : #4d4d4d; margin-bottom: 30px;}
+.content1 article .container .box_model button { text-align: left; border-radius: 20px;  font-size : 14px;   border : none; width : 120px; height: 40px; background-color : #f6f6f6; }
+.content1 article .container .box_model:hover button { text-align: center;  font-weight: bold; color : white; background-color: #009bfa; transition: all 0.4s;}
+
+
+@media (min-width: 300px) and (max-width : 1199px){ 
+    body { background-color:rgb(246, 246,246);}
+    header article{ height: 50px; }
+    header .table_or_mobile { display:block;}
+    header .pc { display: none;}
+
+    header { border-bottom-style : solid; border-width: 1px; border-color : white;}
+    .content1 { padding : 30px 0px; }
+    .content1 article { width: auto;}
+    .content1 article .title { color : #4d4d4d; font-size : 14px; padding-bottom : 10px; }
+    .content1 article .sub_title {display: none;}
+    .content1 article .container { display: block; width : auto; padding : 0px 10px; background-color: rgb(246, 246,246); }
+    .content1 article .container .box_model { margin : 10px 0px; background-color: white; width : auto;}
+    .content1 article .container .img_box { margin : 0px auto;  overflow : hidden; margin-bottom : 20px; width : 68px; height: 68px;  border: 1px solid #d4d4d4; border-radius : 10px;}
+    .content1 article .container .box_model img {  width : 68px; height: 68px; }
+    .content1 article .container .box_model h3 { font-size : 14px; margin-bottom : 10px}
+    .content1 article .container .box_model p { font-size : 10px;margin-bottom: 10px;}
+    .content1 article .container .box_model button { text-align: center;  border-radius: 15px; font-size : 1px; width : 80px; height: 25px; background-color :#009bfa; color : white; }    
+    .content1 article .container .box_model:hover button { text-align: center;  font-weight: bold; color : white; background-color: #009bfa; transition: all 0.4s;}
+    .content1 article .container .box_model:hover { -mozs-box-shadow:none; -webkit-box-shadow:none; box-shadow:none; transform :none;  background-color : none; transition: none; }
+}
+
+
+
