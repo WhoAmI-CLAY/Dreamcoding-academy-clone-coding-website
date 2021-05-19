@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body { margin : 0px; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
+h1,h2,h3,h4,h5,h6,p, ul { margin : 0px; padding : 0px}
+li  {list-style : none;}
+a { color : black; text-decoration: none;}
+button { padding : 0px; cursor : pointer; padding :0px;}
+input { box-sizing: border-box;}
+img { display: block;} .hide { display: none;}
+
+header { background: white;; }
+header.active { position : fixed; top :0px; width : 100%; z-index: 10;}
+header .header-top { border-bottom : 1px solid #e8e8e8 }
+header .header-top .top-box {width: 1350px;  margin : 0px auto; }
+header .header-top .top-box ul { display: flex; justify-content: flex-end;}
+header .header-top .top-box ul li a { display: block; padding : 10px; font-size : 12px; color : #898989;}
+header .header-bottom { }
+header .header-bottom .bottom-box { display: flex;  padding-top : 20px; width: 1350px; height : 74px; margin : 0px auto; }
+header .header-bottom .bottom-box .main-logo img{ width: 204px; height: 44px; }
+header .header-bottom .bottom-box ul { position : relative; display: flex; justify-content: center; width: 100%; padding-top : 25px; }
+header .header-bottom .bottom-box ul li  { padding-left : 40px; padding-right : 40px; }
+header .header-bottom .bottom-box ul li a { color : #3f4344; font-size : 18px; padding-bottom : 23px; margin-bottom : 3px;  }
+header .header-bottom .bottom-box ul li:last-child { position : absolute; right : 0px; top : 0px; padding :0px  }
+header .header-bottom .bottom-box ul li:last-child a { padding : 0px; margin : 0px;}
+
+.visual { position : relative;}
+.visual .slick-dots { position : absolute; display : flex; bottom : 13px; left : 50%; transform: translateX(-50%);}
+.visual .slick-dots li { margin-right : 4px; margin-left : 4px; }
+.visual .slick-dots li button{  border:none; padding : 0px; font-size : 0px; width: 15px; height : 15px; border-radius : 100%; background-color : white; opacity: 0.5; }
+.visual .slick-dots li.slick-active button { opacity: 1;}
+
+.movie  { position : relative; }
+.movie li {position :relative; }
+.movie  li iframe { position :absolute; right : 298px; top : 227px;}
+.movie  li.movie_img1 { background : url("/images/movie1.png") no-repeat;  height : 906px;}
+.movie  li.movie_img2 { background: url("/images/movie2.png") no-repeat;  height : 906px;}
+.movie  li.movie_img3 {background: url("/images/movie3.png") no-repeat;  height: 906px; }
+.movie  .slick-dots { position : absolute; display: flex; right : 651px; bottom : 183px;  }
+.movie  .slick-dots li { }
+.movie  .slick-dots li button { border :none; font-size : 0px; background : none; width: 15px; height : 15px; margin-right: 10px; border-radius : 100%; background-color: #a7adaf;  }
+.movie .slick-dots li.slick-active button { background-color: #90cbe2;}
+
+.main-content3 img{ width: 1903px;}
+
+.main-content4{}
+.main-content4 article{ background : url("/images/prodBG.png") no-repeat;  height : 906px;}
+
+.main-content5 img { width: 1903px;}
+
+footer { position : relative; padding : 45px 0px}
+footer:before { content : ""; position : absolute; width: 100%; height : 1px; background-color :#eaeaea; left : 0px; top : 45px;}
+footer article { display: flex ; justify-content: space-between; width:1350px; padding-top : 50px; margin : 0px auto; }
+footer article nav .info { display: flex;}
+footer article nav .info li a { display: block; padding :0px 15px 10px; color : #323232; font-size : 16px; }
+footer article nav .info li:first-child a { padding-left :0px;}
+footer article nav  .company { line-height: 24px; font-size : 13px; margin-top : 15; color : #a5a3a3;}
+footer article nav .copy { font-size: 12px; margin-top : 25px; color : #a5a3a3;}
+footer article ul { }
+footer article ul h1 { font-size : 27px; color :#6f6f6f; font-weight: 300;}
+footer article ul h2 { display: flex; font-size : 35px; color : #1c1c1c; margin-top : -17px; font-weight: 700;}
+footer article ul p  { color : #a0a3a4; font-size : 13px; padding-top : 8px; line-height: 24px;}
