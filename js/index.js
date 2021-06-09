@@ -1,6 +1,6 @@
 $(function() {
     $('.visual').slick({
-        dots:true
+        dots:true,  autoplay: true, autoplaySpeed: 5000
     });
 
 })
