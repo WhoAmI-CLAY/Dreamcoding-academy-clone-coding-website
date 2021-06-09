@@ -1,0 +1,122 @@
+header { height: 60px; background-color: white; }
+header.active { position :fixed; left : 0px; top : 0px; width : 100%; z-index : 100; 
+   box-shadow:  rgba(0, 0, 0, 0.1) 0px 5px 10px 0px; }
+header article { position : relative; height: 60px; margin : 0px 50px; }
+header article div img { position : absolute; left : 0px; top : 50%; transform: translateY(-50%); width: 100px; height: 60px;}
+header article .menu { display: flex; position : absolute; left : 50%; top : 50%; transform: translate(-50%, -50%);}
+header article .menu li { padding : 0px 15px;  }
+header article .menu li a { position : relative; display: block; height: 60px; line-height: 60px; font-size : 15px; color : #003628; font-weight: 600;}
+header article .menu li a:after { content : ""; position : absolute; width: 100%; height: 3px; background-color : #003628; left : 0px; bottom : 14px; opacity: 0; }
+header article .menu li a:hover:after { opacity: 1;}
+header article .sub-content { display: flex; position : absolute; right : 0px; transform: translateY(-50%); top : 50%}
+header article .sub-content li { height : 60px; line-height: 60px;;}
+header article .sub-content li a{ position : relative; padding : 0px 10px; font-size : 13px; color : #003628; font-weight: 300 ; }
+header article .sub-content li a:after { content : ""; position : absolute; width : 1px; height : 14px; background-color : rgba(0, 0, 0, 0.2); right: 0px; top : 50%; transform: translateY(-50%); }
+header article .sub-content li:last-child a:after { display: none; }
+header article .topNav { display: none;}
+
+.visual { position :relative; }
+.visual  li { position :relative; width: 100%; height: 830px;; overflow: hidden;}
+.visual  li img { position :absolute; z-index : 1; width : 100%;   left : 50%; transform: translateX(-50%); height : 830px;  }
+.visual .slick-prev , .slick-next { position :absolute; width : 38px; height: 73px; top : 50%; transform: translateY(-50%); z-index : 3; font-size : 0px; background :none; }
+.visual .slick-prev { left : 50px; background :url("/images/index/arrow_prev_wh.png") no-repeat  }
+.visual .slick-next { right : 50px;  background :url("/images/index/arrow_next_wh.png") no-repeat}
+.visual .slick-dots { position : absolute; z-index : 10; display:flex; bottom : 25px; left :50%; transform: translateX(-50%);}
+.visual .slick-dots li { display: block; padding : 0px 5px; width : 10px; height :10px; background :none; }
+.visual .slick-dots li button{ display: block; width : 10px; height :10px; font-size : 0px; background-color : white; border-radius: 5px;; }
+.visual .slick-dots li.slick-active button { width : 40px;}
+.visual .slick-dots li.slick-active { width : 40px;}
+.visual li div { display: inline-block; padding : 50px; background-color : rgba(0, 0, 0, 0.5); text-align: center; position : relative; top : 50%; left : 50%; transform: translate(-50%, -50%); z-index : 5;}
+.visual li div h3 { font-size : 36px; color : white; font-weight: 700;}
+.visual li div p { font-size : 18px; color : white; line-height: 25.2px; margin-top : 10px; margin-bottom : 40px}
+.visual li div a { display: block; margin : 0px auto; width : 180px; height :50px; background-color: white; color : #003628; font-weight: 700; line-height: 50px;;}
+
+.wrap {  }
+.wrap article{ padding : 150px 0px;  width  : 1120px; height : auto; margin :0px auto;}
+.wrap article h3 { text-align: center; font-size : 48px; margin-bottom : 30px; color : #003628; font-weight: 700; font-family: 'BerlingskeSerifTx-DBd';}
+.wrap article .wrap-sub-title { font-size : 18px; color : #003628; font-weight: 300; text-align: center; margin-bottom : 80px;  }
+.wrap .video-target {  width : 1120px; height :630px; border : 0px;}
+.wrap ul { margin-top : 80px; display: flex; justify-content:space-between;}
+.wrap ul li { width:100%; display: flex; flex-direction: column; align-items: center; border-right : 1px solid rgba(0, 0,0, 0.1)}
+.wrap ul li:last-child { border :none;}
+.wrap ul li p { text-align: center; font-size: 18px; color : #003628; margin-top : 30px;font-weight: 300; line-height: 25.2px;}
+
+
+@media (min-width : 781px) and (max-width : 1160px) {   
+    header article { margin : 0px 20px; }
+    header article .menu { display: none;}
+    header article .sub-content { display: none;}
+    header article .topNav { display: flex; align-items: center; height: 60px; position: absolute; right : 0px;}
+    header article .topNav li { margin-left: 10px;}
+    header article .topNav li img{ width : 40px; height : 40px }
+    header article .topNav li:last-child a { display: block; padding-left : 7px;}
+    
+    .visual  li {  height: 730px;}
+    .visual  li img { width : 1350px; height : 730px}
+    .visual .slick-prev , .slick-next {display: none;}
+    
+    .wrap article{ padding : 150px 0px;  width  :auto; height : auto; margin : 0px 20px;}
+    .wrap .responsive-box { padding : 56.25% 0 0 0; position : relative;}
+    .wrap .video-target { position : absolute; top : 0px; left : 0px; width : 100%; height :100%; border : 0px;}
+  
+}
+
+@media (min-width : 450px) and (max-width : 780px) {    
+    header article { margin : 0px 20px; }
+    header article .menu { display: none;}
+    header article .sub-content { display: none;}
+    header article .topNav { display: flex; align-items: center; height: 60px; position: absolute; right : 0px;}
+    header article .topNav li { margin-left: 10px;}
+    header article .topNav li img{ width : 34px; height : 34px }
+    header article .topNav li:last-child a { display: block; padding-left : 7px;}
+
+    .visual  li {  height: 630px;}
+    .visual  li img { width :1000px; height : 630px}
+    .visual .slick-prev , .slick-next {display: none;}
+    .visual li div {display: block;  padding : 30px 30px 70px 30px; background-color: rgba(0, 0, 0, 0.5); top : 364px;   left : 0px; transform : none; z-index : 5;}
+    .visual li div p { font-size : 16px; color : white; line-height: 22.4px; margin-top : 10px; margin-bottom : 20px; }
+    .visual li div a { display: block; margin : 0px auto; width : 100px; font-size : 14px; height : 40px;  font-weight: 700; line-height: 40px;;}
+
+    .wrap article{ padding : 70px 0px;  width  :auto; height : auto; margin : 0px 20px;}
+    .wrap .responsive-box { padding : 56.25% 0 0 0; position : relative;}
+    .wrap .video-target { position : absolute; top : 0px; left : 0px; width : 100%; height :100%; border : 0px;}
+    .wrap article h3 {  font-size : 36px; margin-bottom : 15px;}
+    .wrap article .wrap-sub-title { font-size : 16px;  margin-bottom : 40px; }
+    .wrap ul { margin-top :0px; flex-direction: column; justify-content: none;}
+    .wrap ul li { padding : 40px 0px; border-right : none;  border-bottom : 1px solid rgba(0, 0,0, 0.1)}
+    .wrap ul li:last-child { padding-bottom : 0px}
+    .wrap ul li p { font-size: 16px;  line-height: 22.4px;}
+
+}
+
+@media (min-width : 300px) and (max-width : 449px) {   
+    header article { margin : 0px 20px; }
+    header article .menu { display: none;}
+    header article .sub-content { display: none;}
+    header article .topNav { display: flex; align-items: center; height: 60px; position: absolute; right : 0px;}
+    header article .topNav li { margin-left: 10px;}
+    header article .topNav li img{ width : 34px; height : 34px }
+    header article .topNav li:last-child a { display: block; padding-left : 7px;}
+
+    .visual  li {  height: 568px;}
+    .visual  li img { width : 500px; height : 568px}
+    .visual .slick-prev , .slick-next { display: none;}
+    .visual li div {display: block;  padding : 30px 30px 70px 30px; background-color: rgba(0, 0, 0, 0.5); top : 323px;   left : 0px; transform : none; z-index : 5;}
+    .visual li div h3 { font-size : 26px; }
+    .visual li div p { font-size : 14px; color : white; line-height: 19.6px; margin-top : 10px; margin-bottom : 20px; }
+    .visual li div a {  width : 100px; font-size : 14px; height : 40px;  font-weight: 700; line-height: 40px;;}
+
+    .wrap article{ padding : 70px 0px;  width  :auto; height : auto; margin : 0px 20px;}
+    .wrap .responsive-box { padding : 56.25% 0 0 0; position : relative;}
+    .wrap .video-target { position : absolute; top : 0px; left : 0px; width : 100%; height :100%; border : 0px;}
+    .wrap article h3 {  font-size : 28px; margin-bottom : 15px;}
+    .wrap article .wrap-sub-title { font-size : 14px;  margin-bottom : 40px; }
+    .wrap ul { margin-top :0px; flex-direction: column; justify-content: none;}
+    .wrap ul li { padding : 40px 0px; border-right : none;  border-bottom : 1px solid rgba(0, 0,0, 0.1)}
+    .wrap ul li:nth-child(1) img { width : 140px; height : 76.36px;}
+    .wrap ul li:nth-child(2) img { width : 140px; height : 66.86px;}
+    .wrap ul li:nth-child(3) img { width : 140px; height : 80px;}
+    .wrap ul li:last-child { padding-bottom : 0px}
+    .wrap ul li p { font-size: 14px;  line-height: 19.6px;}
+
+}
